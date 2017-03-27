@@ -3,39 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-
+  <script  src="https://code.jquery.com/jquery-1.12.4.js"  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>월요일 수업</h1>
-  <p>
+  <h1 id="title">월요일 수업</h1>
+  <p class="meun">
     김성수 
     <a href="https://www.facebook.com/ss4483"  target="_blank">
       <img src="image/logo.png" alt="facebook_logo" style="width:30px;height:30px;" />
     </a>
     <a href="https://likelion.net/"  target="_blank">멋사</a>
   </p>
-
-  <div>
-    <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
-  </div>
-  
-  <div>
-    <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
-  </div>
-
-
-  <div>
-    <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
-  </div>
-  
-  <div>
-    <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
-  </div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
+      </div>
+      
+      <div class="col-md-6">
+        <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-md-6">
+        <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
+      </div>
+      
+      <div class="col-md-6">
+        <img src="image/img.png" alt="img_1" style="width:200px;height:200px;" />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare, purus quis varius commodo, massa orci congue quam, quis malesuada ipsum dui ac risus. Donec eu metus euismod, tristique lectus vitae, mattis diam. Praesent lobortis ullamcorper lacinia. Donec pharetra magna ac justo feugiat convallis. Mauris accumsan ante vitae mi aliquet, a cursus mi lacinia. Curabitur finibus placerat lorem sit amet bibendum. Curabitur odio diam, iaculis a consectetur in, suscipit ut lorem. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tristique dignissim quam, at consequat metus elementum sit amet. Mauris sagittis dui at augue tincidunt, id convallis leo accumsan. Sed mi felis, aliquet blandit vestibulum ut, auctor quis erat. Phasellus iaculis nec enim et vestibulum.
+      </div>
+    </div>
+  </div>  
   
   
 </body>
